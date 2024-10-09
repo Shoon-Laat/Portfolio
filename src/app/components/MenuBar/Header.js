@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 export default function Header({scrollToSection}){
   const [isOpen, setIsOpen] = useState(false);
+  // const [active, setIsactive] = useState(false);
   const handleMenuItemClick = (section) => {
     scrollToSection(section);
     setIsOpen(false);
