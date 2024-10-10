@@ -3,10 +3,9 @@ import Image from 'next/image'
 import ScrollAnimation from 'react-animate-on-scroll';
 export default function Banner({id}){
 return(
-  <div className="md:h-screen">
-    <div className="banner bg-custom-image bg-cover bg-center relative">
+    <div className="banner md:h-screen bg-custom-image bg-cover bg-center relative">
     <ScrollAnimation  animateIn='fadeIn'>
-        <div id={id} className="container mx-auto max-w-mobile md:max-w-pc flex flex-wrap flex-col-reverse md:flex-row justify-between items-center md:py-32 py-20 md:py-0">
+        <div id={id} className="container mx-auto max-w-mobile md:max-w-pc flex flex-wrap flex-col-reverse md:flex-row justify-between items-center md:pt-32 pb-0 py-20 md:py-0">
         <div className="xl:w-2/5 md:w-2/4 font-bold w-full">
         <ScrollAnimation animateIn='bounceInLeft' duration={3}>
           <span className="custom-text text-sm md:text-base xl:text-lg">Hello! I'm</span>
@@ -27,7 +26,6 @@ return(
         </div>
         </div>
         </ScrollAnimation>
-        </div>
   </div>
 )
 

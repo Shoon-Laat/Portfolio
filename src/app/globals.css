@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  box-sizing: border-box;
+}
+
 :root {
   --background: #4B0082 ;
   --foreground: hsl(0, 0%, 100%); 
