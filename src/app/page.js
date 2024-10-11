@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import "animate.css/animate.compat.css";
 import SideBar from './components/SideBar';
 import Loading from './components/Loading';
+import ThemeProvider from './components/context/ThemeProvider';
 
 
 export default function Home() {
@@ -24,14 +25,14 @@ export default function Home() {
     return <Loading />;
   }
   return (
-   <div>
+ 
+    <ThemeProvider>
     <Header scrollToSection={scrollToSection}></Header>
      <Banner id="banner"></Banner>
      <About id="about"></About>
      <Projects id="projects"></Projects>
      <Contact id="contact"></Contact>
     <SideBar />
-
-   </div>
+   </ThemeProvider>
   );
 }

@@ -28,6 +28,20 @@ body {
   /* height: 2000px; */
 }
 
+[data-theme="light"] {
+  --background: #4B0082 ;
+  --foreground: hsl(0, 0%, 100%); 
+  --headercolor: #2c293791;
+  --font-color: #E6E6FA;
+}
+
+[data-theme="dark"] {
+  --background: #000 ;
+  --foreground: hsl(0, 0%, 100%); 
+  --headercolor: #2c293791;
+  --font-color: #E6E6FA;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -85,6 +99,9 @@ body {
     height: 100%;
     background: rgba(55, 1, 97, 0.6) no-repeat center/cover;
     /* z-index: -1; */
+  }
+  [data-theme="dark"]  .banner::before{
+    background: rgba(0, 0, 0,0.76) no-repeat center / cover;
   }
    
 }
