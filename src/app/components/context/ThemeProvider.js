@@ -19,7 +19,7 @@ export default function ThemeProvider({ children }){
         );
       }, [darkMode]);
       return (
-        <ThemeContext.Provider value={{ toggleTheme, darkMode }}>
+        <ThemeContext.Provider value={{ toggleTheme, darkMode}}>
           {children}
         </ThemeContext.Provider>
       );

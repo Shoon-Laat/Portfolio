@@ -49,11 +49,11 @@ body {
   .header-color{
     background-color: var(--headercolor);
   }
-  .border-color{
+  .border-color,.active.border-color{
     position: relative;
     padding-bottom: 2px;
   }
-  .border-color:before{
+  .border-color:before,.active.border-color:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -65,7 +65,7 @@ body {
     -webkit-transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
   }
-  .border-color:hover:before{ 
+  .border-color:hover:before,.active.border-color:before{ 
     transform: scaleX(1);
   }
   .custom-text {
