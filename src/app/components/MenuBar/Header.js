@@ -74,7 +74,7 @@ export default function Header({ scrollToSection }) {
                   Contact
                 </a>
               </li>
-              <li>
+              <li className="py-2 px-4 text-center">
                 <button
                   id="theme-toggle"
                   onClick={toggleTheme}
